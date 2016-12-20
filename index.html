@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title> Test de connaissances HTML </title>
     <link rel="stylesheet" href="styles/styleIndex.css" />
-
-
 </head>
 <body>
 <header>
@@ -14,24 +12,27 @@
     </div>
     <h1>Bienvenue au test de connaissances en HTML</h1>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="tableauDeBord.html">Tableau de bord</a>
-        <a href="pageInstructions.html">Instructions</a>
+        <ul>
+            <li> <a href="index.html" class="active">Accueil</a></li>
+            <li> <a href="tableauDeBord.html" >Tableau de bord</a></li>
+            <li><a href="pageInstructions.html">Instructions</a></li>
+            </hr>
+        </ul>
     </nav>
-    <hr />
+
 </header>
 <main>
     <article>
-        <p>Vous pouvez commencer le <a href="TableauDeBord.html"><input type="button" value="Test Rapide" class="btn">  </a> </p>
+        <p>Vous pouvez commencer le <a href="TableauDeBord.html"><input type="button" value="Test" class="btn">  </a> </p>
         <hr />
     </article>
 </main>
 
-<footer>
+<div class="footer">
     <div id="copyright">
         &copy TNR
     </div>
     <div>Contact information: <a href="mailto:rtchougo@gmail.com">rtchougo@gmail.com</a></div>
-</footer>
+</div>
 </body>
 </html>

@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Tableau de bord</title>
+    <link rel="stylesheet" href="styles/styleIndex.css" />
 </head>
 <body>
-<h1>Bienvenue sur votre tableau de bord!!</h1>
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="pageInstructions.html">Instructions</a>
-</hr>
-</nav>
+    <header>
+    <h1>Bienvenue sur votre tableau de bord!!</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="tableauDeBord.html" class="active">Tableau de bord</a></li>
+                <li><a href="pageInstructions.html">Instructions</a></li>
+            </hr>
+            </ul>
+        </nav>
+    </header>
+        <div id="testDiv">
+            <p>
+                Faites un test rapide
+                <a href="PageTestRapide.html"> <input type="button" value="Test Rapide" class="btn"></a>
+            </p>
+        </div>
+        <p>
+            <strong>OU </strong>
+            Passez à l'examen
+        </p>
 
-</hr>
-<footer>
-    <div id="copyright">
-        &copy TNR
+        <hr/>
+            <div class="gche">
+            <form action="PageExamen.html">
+                <fieldset class="fieldExam">
+                     <legend>Domaine</legend>
+                        <p>
+                            <label for="html"><input type="checkbox" id="html" name="html"> HTML </label>
+                            <label for="css"><input type="checkbox" id="css" name="css"> CSS </label>
+                            <label for="javaSP"><input type="checkbox" id="javaSP" name="javaSP"> javaScript </label>
+                        </p>
+                        <p>
+                            <label for="nbQuestions"> Choisissez le nombre de questions</label>
+                            <input type="number" step="1" value="1" min="1" max="10" required>
+                        </p>
+                    <a href="PageExamen.html"> <input type="button" value="Examen" class="btn"></a>
+                </fieldset>
+            </form>
+            </div>
+            <div class="dte">
+
+                    <h1>STATISTIQUES</h1>
+                <p>
+                    Nombre de tests rapides reussis : 1/25 <br>
+                    Moyenne des examens : 99.99%
+                </p>
+                    <input type="button" value="Details" class="btn">
+            </div>
+
+    <div class="footer">
+        <div id="copyright">
+            &copy TNR
+        </div>
+        <div>Contact information: <a href="mailto:rtchougo@gmail.com">rtchougo@gmail.com</a></div>
     </div>
-    <div>Contact information: <a href="mailto:rtchougo@gmail.com">rtchougo@gmail.com</a></div>
-</footer>
 </body>
 </html>
